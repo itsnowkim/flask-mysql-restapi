@@ -14,14 +14,24 @@ $ docker-compose up -d
 ### flask 설치 및 실행
 
 ```sh
-$ virtualenv venv && source venv/bin/activate
-(venv) $ pip3 install flask PyMySQL flask-sqlacodegen Flask-SQLAlchemy SQLAlchemy
+virtualenv venv && source venv/bin/activate
+pip3 install flask PyMySQL flask-sqlacodegen Flask-SQLAlchemy SQLAlchemy
 ```
 
 ## Run
 
+### flask 앱 실행
+
 ```sh
-$ flask run
+flask run
+```
+
+### db 로그인
+docker의 bash로 들어가서 mysql 로그인을 한다.
+
+```sh
+mysql -u wool -p
+Enter password: qwerqwer123
 ```
 
 이제 postman에서 테스트해보세요
